@@ -73,10 +73,8 @@ public class MusicOrganizer
         
         ArrayList<Track> randomTracks = new ArrayList<Track>(tracks);
         int random;
-<<<<<<< HEAD
-=======
+
         System.out.println("Randomly playing music library:");
->>>>>>> RandomPlaylist
         
         while (randomTracks.size() > 0) {
             
