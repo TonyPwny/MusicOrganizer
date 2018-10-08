@@ -29,7 +29,6 @@ public class MusicOrganizer
         tracks = new ArrayList<>();
         player = new MusicPlayer();
         reader = new TrackReader();
-        rand = new Random();
         readLibrary("../audio");
         System.out.println("Music library loaded. " + getNumberOfTracks() + " tracks.");
         System.out.println();
@@ -72,6 +71,7 @@ public class MusicOrganizer
     public void randomPlaylist() {
         
         ArrayList<Track> randomTracks = new ArrayList<Track>(tracks);
+        rand = new Random();
         int random;
         System.out.println("Randomly playing music library:");
         
