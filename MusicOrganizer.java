@@ -96,6 +96,16 @@ public class MusicOrganizer
     }
     
     /**
+     * Play a random song in the collection.
+     */
+    public void randomSong() {
+        
+        stopPlaying();
+        playTrack(rand.nextInt(getNumberOfTracks()));
+    }
+
+    
+    /**
      * List a track from the collection.
      * @param index The index of the track to be listed.
      */
