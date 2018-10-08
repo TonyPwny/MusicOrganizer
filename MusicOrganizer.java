@@ -101,6 +101,7 @@ public class MusicOrganizer
     public void randomSong() {
         
         stopPlaying();
+        System.out.println("Randomly playing a song in the library:");
         playTrack(rand.nextInt(getNumberOfTracks()));
     }
 
